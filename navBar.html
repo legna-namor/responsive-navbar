@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Title</title>
+    <link rel="stylesheet" href="assets/css/navBar.css" />
+</head>
+<body>
+    <header>
+        <nav class="container nav" aria-label="Main navigation">
+            <div class="left">
+                <a href="#home" class="logo">
+                    <span class="brand">Brand</span>
+                </a>
+                <div class="links">
+                    <a class="link" href="#menuitem1" data-nav-link>MenuItem1</a>
+                    <a class="link" href="#menuitem2" data-nav-link>MenuItem2</a>
+                    <a class="link" href="#menuitem3" data-nav-link>MenuItem3</a>
+                    <a class="link" href="#menuitem4" data-nav-link>MenuItem4</a>
+                </div>
+            </div>
+            <div class="right">
+                <a class="cta" href="#cta">Call to Action</a>
+                <button
+                    class="hamburger"
+                    id="menuButton"
+                    type="button"
+                    aria-controls="mobileMenu"
+                    aria-expanded="false"
+                    aria-label="Open menu"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-panel-wrap container" id="mobileMenu">
+            <div
+                class="mobile-panel"
+                data-open="false"
+                role="menu"
+                aria-label="Mobile navigation"
+            >
+                <a class="mobile-item" href="#menuitem1" role="menuitem" data-nav-link>MenuItem1</a>
+                <a class="mobile-item" href="#menuitem2" role="menuitem" data-nav-link>MenuItem2</a>
+                <a class="mobile-item" href="#menuitem3" role="menuitem" data-nav-link>MenuItem3</a>
+                <a class="mobile-item" href="#menuitem4" role="menuitem" data-nav-link>MenuItem4</a>
+                <a class="mobile-item mobile-cta" href="#cta" role="menuitem">
+                    Call to Action
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="assets/js/navBar.js"></script>
+</body>
+</html>
